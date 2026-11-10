@@ -1,0 +1,39 @@
+.health-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.health-page__card {
+  width: 100%;
+  max-width: 480px;
+  padding: var(--space-lg);
+  text-align: center;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.health-page__title {
+  margin: 0 0 var(--space-md);
+  font-size: 20px;
+}
+
+.health-page__status {
+  margin: 0;
+  font-weight: 600;
+}
+
+.health-page__status--loading {
+  color: var(--color-muted);
+}
+
+.health-page__status--success {
+  color: var(--color-success);
+}
+
+.health-page__status--error {
+  color: var(--color-danger);
+}

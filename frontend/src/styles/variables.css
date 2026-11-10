@@ -1,0 +1,16 @@
+:root {
+  --color-primary: #1677ff;
+  --color-success: #52c41a;
+  --color-danger: #ff4d4f;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+  --color-bg: #f5f7fa;
+  --color-surface: #ffffff;
+
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+
+  --radius: 8px;
+  --font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
