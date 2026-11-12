@@ -1,0 +1,33 @@
+.device-list-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.device-list-page__card {
+  width: 100%;
+  max-width: 480px;
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.device-list-page__title {
+  margin: 0 0 var(--space-md);
+  font-size: 20px;
+}
+
+.device-list-page__text {
+  margin: 0 0 var(--space-sm);
+}
+
+.device-list-page__text--muted {
+  color: var(--color-muted);
+}
+
+.device-list-page__logout {
+  margin-top: var(--space-md);
+}
