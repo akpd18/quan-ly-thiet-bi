@@ -1,9 +1,12 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import HomeRedirect from './components/HomeRedirect/HomeRedirect.jsx';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute.jsx';
+import AppLayout from './components/AppLayout/AppLayout.jsx';
 import LoginPage from './pages/Login/LoginPage.jsx';
 import DashboardPage from './pages/Dashboard/DashboardPage.jsx';
 import DeviceListPage from './pages/DeviceList/DeviceListPage.jsx';
+import DeviceDetailPage from './pages/DeviceDetail/DeviceDetailPage.jsx';
+import DeviceFormPage from './pages/DeviceForm/DeviceFormPage.jsx';
 import ForbiddenPage from './pages/Forbidden/ForbiddenPage.jsx';
 import HealthPage from './pages/Health/HealthPage.jsx';
 
@@ -16,13 +19,20 @@ export default function App() {
 
       {/* Cần đăng nhập, vai trò nào cũng vào được */}
       <Route element={<ProtectedRoute />}>
-        <Route path="/thiet-bi" element={<DeviceListPage />} />
+        <Route element={<AppLayout />}>
+          <Route path="/thiet-bi" element={<DeviceListPage />} />
+          <Route path="/thiet-bi/:id" element={<DeviceDetailPage />} />
+        </Route>
         <Route path="/403" element={<ForbiddenPage />} />
       </Route>
 
       {/* Chỉ quản trị viên */}
       <Route element={<ProtectedRoute roles={['quan_tri']} />}>
-        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route element={<AppLayout />}>
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/thiet-bi/them" element={<DeviceFormPage />} />
+          <Route path="/thiet-bi/:id/sua" element={<DeviceFormPage />} />
+        </Route>
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />

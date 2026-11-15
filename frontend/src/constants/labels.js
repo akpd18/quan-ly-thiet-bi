@@ -19,3 +19,21 @@ export const VAI_TRO_LABEL = {
   quan_tri: 'Quản trị viên',
   nhan_vien: 'Nhân viên',
 };
+
+// Màu thẻ (Tag) của Ant Design cho từng giá trị
+export const TRANG_THAI_COLOR = {
+  san_sang: 'success',
+  dang_muon: 'processing',
+  dang_bao_duong: 'cyan',
+  dang_sua_chua: 'warning',
+  cho_xu_ly: 'error',
+  that_lac: 'volcano',
+  da_thanh_ly: 'default',
+};
+
+export const TINH_TRANG_COLOR = {
+  moi: 'blue',
+  tot: 'success',
+  cu: 'gold',
+  hong: 'error',
+};

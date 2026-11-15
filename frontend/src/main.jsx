@@ -8,9 +8,21 @@ import './styles/base.css';
 import App from './App.jsx';
 import AuthProvider from './contexts/AuthProvider.jsx';
 
+const theme = {
+  token: { colorPrimary: '#1677ff', borderRadius: 8 },
+  components: {
+    Layout: {
+      bodyBg: '#f5f7fa',
+      headerBg: '#ffffff',
+      headerHeight: 56,
+      headerPadding: '0 24px',
+    },
+  },
+};
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ConfigProvider locale={viVN} theme={{ token: { colorPrimary: '#1677ff', borderRadius: 8 } }}>
+    <ConfigProvider locale={viVN} theme={theme}>
       <BrowserRouter>
         <AuthProvider>
           <App />

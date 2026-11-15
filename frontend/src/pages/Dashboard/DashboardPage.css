@@ -1,18 +1,7 @@
 .dashboard-page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-lg);
-}
-
-.dashboard-page__card {
-  width: 100%;
-  max-width: 480px;
   padding: var(--space-lg);
   background: var(--color-surface);
   border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .dashboard-page__title {
@@ -21,13 +10,6 @@
 }
 
 .dashboard-page__text {
-  margin: 0 0 var(--space-sm);
-}
-
-.dashboard-page__text--muted {
+  margin: 0;
   color: var(--color-muted);
-}
-
-.dashboard-page__logout {
-  margin-top: var(--space-md);
 }

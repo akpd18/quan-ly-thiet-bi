@@ -1,7 +1,8 @@
 import express from 'express';
 import pool from './config/db.js';
 import authRoutes from './routes/auth.routes.js';
-import { authenticate, authorize } from './middlewares/auth.js';
+import catalogRoutes from './routes/catalog.routes.js';
+import deviceRoutes from './routes/device.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -23,11 +24,8 @@ app.get('/api/health', async (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
-
-// Route thử phân quyền, sẽ xóa ở bước sau
-app.get('/api/admin/ping', authenticate, authorize('quan_tri'), (req, res) => {
-  res.json({ message: 'Bạn là quản trị viên, truy cập hợp lệ' });
-});
+app.use('/api/catalog', catalogRoutes);
+app.use('/api/devices', deviceRoutes);
 
 // Bắt lỗi chưa xử lý
 app.use((err, req, res, next) => {
