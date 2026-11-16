@@ -7,6 +7,8 @@ import DashboardPage from './pages/Dashboard/DashboardPage.jsx';
 import DeviceListPage from './pages/DeviceList/DeviceListPage.jsx';
 import DeviceDetailPage from './pages/DeviceDetail/DeviceDetailPage.jsx';
 import DeviceFormPage from './pages/DeviceForm/DeviceFormPage.jsx';
+import DepartmentListPage from './pages/Department/DepartmentListPage.jsx';
+import DeviceTypeListPage from './pages/DeviceType/DeviceTypeListPage.jsx';
 import ForbiddenPage from './pages/Forbidden/ForbiddenPage.jsx';
 import HealthPage from './pages/Health/HealthPage.jsx';
 
@@ -32,6 +34,8 @@ export default function App() {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/thiet-bi/them" element={<DeviceFormPage />} />
           <Route path="/thiet-bi/:id/sua" element={<DeviceFormPage />} />
+          <Route path="/danh-muc/phong-ban" element={<DepartmentListPage />} />
+          <Route path="/danh-muc/loai-thiet-bi" element={<DeviceTypeListPage />} />
         </Route>
       </Route>
 

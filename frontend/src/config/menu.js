@@ -1,8 +1,23 @@
-import { DashboardOutlined, LaptopOutlined } from '@ant-design/icons';
+import {
+  AppstoreOutlined,
+  DashboardOutlined,
+  LaptopOutlined,
+} from '@ant-design/icons';
 
 // Mỗi mục menu: đường dẫn (key), nhãn, biểu tượng và các vai trò được thấy.
-// Khi thêm trang mới ở các bước sau, chỉ cần thêm một dòng vào đây.
+// Mục có "children" là một nhóm: key của nhóm chỉ là tên gọi, không phải đường dẫn.
+// Mục con không cần khai báo roles, tự theo nhóm chứa nó.
 export const MENU_ITEMS = [
   { key: '/dashboard', label: 'Dashboard', icon: DashboardOutlined, roles: ['quan_tri'] },
   { key: '/thiet-bi', label: 'Thiết bị', icon: LaptopOutlined, roles: ['quan_tri', 'nhan_vien'] },
+  {
+    key: 'danh-muc',
+    label: 'Danh mục',
+    icon: AppstoreOutlined,
+    roles: ['quan_tri'],
+    children: [
+      { key: '/danh-muc/phong-ban', label: 'Phòng ban' },
+      { key: '/danh-muc/loai-thiet-bi', label: 'Loại thiết bị' },
+    ],
+  },
 ];

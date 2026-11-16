@@ -3,6 +3,8 @@ import pool from './config/db.js';
 import authRoutes from './routes/auth.routes.js';
 import catalogRoutes from './routes/catalog.routes.js';
 import deviceRoutes from './routes/device.routes.js';
+import departmentRoutes from './routes/department.routes.js';
+import deviceTypeRoutes from './routes/device-type.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -26,6 +28,8 @@ app.get('/api/health', async (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/catalog', catalogRoutes);
 app.use('/api/devices', deviceRoutes);
+app.use('/api/departments', departmentRoutes);
+app.use('/api/device-types', deviceTypeRoutes);
 
 // Bắt lỗi chưa xử lý
 app.use((err, req, res, next) => {

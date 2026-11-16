@@ -1,0 +1,31 @@
+.department-page {
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+}
+
+.department-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.department-page__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.department-page__alert {
+  margin-bottom: var(--space-md);
+}
+
+.department-page__row-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.department-page__actions {
+  display: flex;
+  gap: var(--space-sm);
+}

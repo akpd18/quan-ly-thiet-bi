@@ -15,16 +15,24 @@ export default function AppLayout() {
   const { pathname } = useLocation();
   const [collapsed, setCollapsed] = useState(false);
 
-  // Chỉ hiện các mục menu mà vai trò hiện tại được phép
-  const visibleItems = MENU_ITEMS.filter((item) => item.roles.includes(user.vaiTro));
-  const menuItems = visibleItems.map(({ key, label, icon: Icon }) => ({
-    key,
-    label,
-    icon: <Icon />,
-  }));
+  // Mục không khai báo roles (mục con) thì ai thấy nhóm cha cũng thấy
+  const canSee = (item) => !item.roles || item.roles.includes(user.vaiTro);
+
+  // Chuyển cấu hình menu sang dạng Ant Design cần, chỉ giữ mục vai trò hiện tại được thấy
+  const toMenuItems = (items) =>
+    items.filter(canSee).map(({ key, label, icon: Icon, children }) => ({
+      key,
+      label,
+      icon: Icon ? <Icon /> : undefined,
+      children: children ? toMenuItems(children) : undefined,
+    }));
+  const menuItems = toMenuItems(MENU_ITEMS);
+
+  // Các mục có đường dẫn thật (mục đơn hoặc mục con của nhóm)
+  const pages = MENU_ITEMS.filter(canSee).flatMap((item) => item.children ?? [item]);
 
   // Trang con (ví dụ /thiet-bi/5) vẫn làm sáng mục menu cha (/thiet-bi)
-  const selected = visibleItems.find(
+  const selected = pages.find(
     (item) => pathname === item.key || pathname.startsWith(`${item.key}/`)
   );
 
@@ -42,6 +50,7 @@ export default function AppLayout() {
           theme="dark"
           mode="inline"
           selectedKeys={selected ? [selected.key] : []}
+          defaultOpenKeys={['danh-muc']}
           items={menuItems}
           onClick={({ key }) => navigate(key)}
         />
