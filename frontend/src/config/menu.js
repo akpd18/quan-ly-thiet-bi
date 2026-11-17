@@ -2,6 +2,7 @@ import {
   AppstoreOutlined,
   DashboardOutlined,
   LaptopOutlined,
+  TeamOutlined,
 } from '@ant-design/icons';
 
 // Mỗi mục menu: đường dẫn (key), nhãn, biểu tượng và các vai trò được thấy.
@@ -20,4 +21,5 @@ export const MENU_ITEMS = [
       { key: '/danh-muc/loai-thiet-bi', label: 'Loại thiết bị' },
     ],
   },
+  { key: '/nguoi-dung', label: 'Người dùng', icon: TeamOutlined, roles: ['quan_tri'] },
 ];

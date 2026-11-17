@@ -5,6 +5,7 @@ import catalogRoutes from './routes/catalog.routes.js';
 import deviceRoutes from './routes/device.routes.js';
 import departmentRoutes from './routes/department.routes.js';
 import deviceTypeRoutes from './routes/device-type.routes.js';
+import userRoutes from './routes/user.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -30,6 +31,7 @@ app.use('/api/catalog', catalogRoutes);
 app.use('/api/devices', deviceRoutes);
 app.use('/api/departments', departmentRoutes);
 app.use('/api/device-types', deviceTypeRoutes);
+app.use('/api/users', userRoutes);
 
 // Bắt lỗi chưa xử lý
 app.use((err, req, res, next) => {

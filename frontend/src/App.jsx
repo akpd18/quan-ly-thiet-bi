@@ -9,6 +9,7 @@ import DeviceDetailPage from './pages/DeviceDetail/DeviceDetailPage.jsx';
 import DeviceFormPage from './pages/DeviceForm/DeviceFormPage.jsx';
 import DepartmentListPage from './pages/Department/DepartmentListPage.jsx';
 import DeviceTypeListPage from './pages/DeviceType/DeviceTypeListPage.jsx';
+import UserListPage from './pages/User/UserListPage.jsx';
 import ForbiddenPage from './pages/Forbidden/ForbiddenPage.jsx';
 import HealthPage from './pages/Health/HealthPage.jsx';
 
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/thiet-bi/:id/sua" element={<DeviceFormPage />} />
           <Route path="/danh-muc/phong-ban" element={<DepartmentListPage />} />
           <Route path="/danh-muc/loai-thiet-bi" element={<DeviceTypeListPage />} />
+          <Route path="/nguoi-dung" element={<UserListPage />} />
         </Route>
       </Route>
 
