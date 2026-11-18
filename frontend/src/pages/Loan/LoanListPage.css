@@ -1,0 +1,42 @@
+.loan-list-page {
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+}
+
+.loan-list-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.loan-list-page__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.loan-list-page__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.loan-list-page__search {
+  width: 320px;
+}
+
+.loan-list-page__filter {
+  width: 170px;
+}
+
+.loan-list-page__alert {
+  margin-bottom: var(--space-md);
+}
+
+.loan-list-page__muted {
+  font-size: 12px;
+  color: var(--color-muted);
+}

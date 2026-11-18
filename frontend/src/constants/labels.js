@@ -20,6 +20,13 @@ export const VAI_TRO_LABEL = {
   nhan_vien: 'Nhân viên',
 };
 
+export const PHIEU_MUON_LABEL = {
+  cho_duyet: 'Chờ duyệt',
+  da_duyet: 'Đã duyệt',
+  da_tra: 'Đã trả',
+  tu_choi: 'Từ chối',
+};
+
 // Màu thẻ (Tag) của Ant Design cho từng giá trị
 export const TRANG_THAI_COLOR = {
   san_sang: 'success',
@@ -36,4 +43,11 @@ export const TINH_TRANG_COLOR = {
   tot: 'success',
   cu: 'gold',
   hong: 'error',
+};
+
+export const PHIEU_MUON_COLOR = {
+  cho_duyet: 'warning',
+  da_duyet: 'processing',
+  da_tra: 'success',
+  tu_choi: 'default',
 };

@@ -1,0 +1,43 @@
+.loan-detail-page__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.loan-detail-page__loading {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.loan-detail-page__alert {
+  margin-bottom: var(--space-md);
+}
+
+.loan-detail-page__card {
+  margin-bottom: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+}
+
+.loan-detail-page__title {
+  margin: 0 0 var(--space-md);
+  font-size: 20px;
+}
+
+.loan-detail-page__subtitle {
+  margin: 0 0 var(--space-md);
+  font-size: 16px;
+}
+
+.loan-detail-page__note {
+  margin: 0 0 var(--space-md);
+  color: var(--color-muted);
+}
+
+.loan-detail-page__actions {
+  display: flex;
+  gap: var(--space-sm);
+}

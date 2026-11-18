@@ -7,6 +7,9 @@ import DashboardPage from './pages/Dashboard/DashboardPage.jsx';
 import DeviceListPage from './pages/DeviceList/DeviceListPage.jsx';
 import DeviceDetailPage from './pages/DeviceDetail/DeviceDetailPage.jsx';
 import DeviceFormPage from './pages/DeviceForm/DeviceFormPage.jsx';
+import LoanListPage from './pages/Loan/LoanListPage.jsx';
+import LoanFormPage from './pages/LoanForm/LoanFormPage.jsx';
+import LoanDetailPage from './pages/LoanDetail/LoanDetailPage.jsx';
 import DepartmentListPage from './pages/Department/DepartmentListPage.jsx';
 import DeviceTypeListPage from './pages/DeviceType/DeviceTypeListPage.jsx';
 import UserListPage from './pages/User/UserListPage.jsx';
@@ -25,6 +28,9 @@ export default function App() {
         <Route element={<AppLayout />}>
           <Route path="/thiet-bi" element={<DeviceListPage />} />
           <Route path="/thiet-bi/:id" element={<DeviceDetailPage />} />
+          <Route path="/phieu-muon" element={<LoanListPage />} />
+          <Route path="/phieu-muon/them" element={<LoanFormPage />} />
+          <Route path="/phieu-muon/:id" element={<LoanDetailPage />} />
         </Route>
         <Route path="/403" element={<ForbiddenPage />} />
       </Route>

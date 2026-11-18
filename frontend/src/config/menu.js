@@ -2,6 +2,7 @@ import {
   AppstoreOutlined,
   DashboardOutlined,
   LaptopOutlined,
+  SwapOutlined,
   TeamOutlined,
 } from '@ant-design/icons';
 
@@ -11,6 +12,7 @@ import {
 export const MENU_ITEMS = [
   { key: '/dashboard', label: 'Dashboard', icon: DashboardOutlined, roles: ['quan_tri'] },
   { key: '/thiet-bi', label: 'Thiết bị', icon: LaptopOutlined, roles: ['quan_tri', 'nhan_vien'] },
+  { key: '/phieu-muon', label: 'Phiếu mượn – trả', icon: SwapOutlined, roles: ['quan_tri', 'nhan_vien'] },
   {
     key: 'danh-muc',
     label: 'Danh mục',
