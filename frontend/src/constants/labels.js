@@ -27,6 +27,17 @@ export const PHIEU_MUON_LABEL = {
   tu_choi: 'Từ chối',
 };
 
+export const LOAI_HINH_LABEL = {
+  bao_duong: 'Bảo dưỡng định kỳ',
+  sua_chua: 'Sửa chữa',
+};
+
+export const KET_QUA_LABEL = {
+  dang_thuc_hien: 'Đang thực hiện',
+  thanh_cong: 'Thành công',
+  khong_thanh_cong: 'Không thành công',
+};
+
 // Màu thẻ (Tag) của Ant Design cho từng giá trị
 export const TRANG_THAI_COLOR = {
   san_sang: 'success',
@@ -50,4 +61,15 @@ export const PHIEU_MUON_COLOR = {
   da_duyet: 'processing',
   da_tra: 'success',
   tu_choi: 'default',
+};
+
+export const LOAI_HINH_COLOR = {
+  bao_duong: 'cyan',
+  sua_chua: 'warning',
+};
+
+export const KET_QUA_COLOR = {
+  dang_thuc_hien: 'processing',
+  thanh_cong: 'success',
+  khong_thanh_cong: 'error',
 };

@@ -11,3 +11,9 @@ export function formatDateTime(value) {
   const time = String(value).slice(11, 16);
   return time ? `${formatDate(value)} ${time}` : formatDate(value);
 }
+
+// Đổi 1500000 thành '1.500.000 đ'
+export function formatMoney(value) {
+  const n = Number(value ?? 0);
+  return `${n.toLocaleString('vi-VN')} đ`;
+}

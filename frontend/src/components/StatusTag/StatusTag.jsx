@@ -1,5 +1,9 @@
 import { Tag } from 'antd';
 import {
+  KET_QUA_COLOR,
+  KET_QUA_LABEL,
+  LOAI_HINH_COLOR,
+  LOAI_HINH_LABEL,
   PHIEU_MUON_COLOR,
   PHIEU_MUON_LABEL,
   TINH_TRANG_COLOR,
@@ -18,4 +22,12 @@ export function TinhTrangTag({ value }) {
 
 export function PhieuMuonTag({ value }) {
   return <Tag color={PHIEU_MUON_COLOR[value]}>{PHIEU_MUON_LABEL[value] ?? value}</Tag>;
+}
+
+export function LoaiHinhTag({ value }) {
+  return <Tag color={LOAI_HINH_COLOR[value]}>{LOAI_HINH_LABEL[value] ?? value}</Tag>;
+}
+
+export function KetQuaTag({ value }) {
+  return <Tag color={KET_QUA_COLOR[value]}>{KET_QUA_LABEL[value] ?? value}</Tag>;
 }

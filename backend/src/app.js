@@ -7,6 +7,7 @@ import departmentRoutes from './routes/department.routes.js';
 import deviceTypeRoutes from './routes/device-type.routes.js';
 import userRoutes from './routes/user.routes.js';
 import loanRoutes from './routes/loan.routes.js';
+import maintenanceRoutes from './routes/maintenance.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -34,6 +35,7 @@ app.use('/api/departments', departmentRoutes);
 app.use('/api/device-types', deviceTypeRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/loans', loanRoutes);
+app.use('/api/maintenance', maintenanceRoutes);
 
 // Bắt lỗi chưa xử lý
 app.use((err, req, res, next) => {

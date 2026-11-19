@@ -4,6 +4,7 @@ import {
   LaptopOutlined,
   SwapOutlined,
   TeamOutlined,
+  ToolOutlined,
 } from '@ant-design/icons';
 
 // Mỗi mục menu: đường dẫn (key), nhãn, biểu tượng và các vai trò được thấy.
@@ -13,6 +14,7 @@ export const MENU_ITEMS = [
   { key: '/dashboard', label: 'Dashboard', icon: DashboardOutlined, roles: ['quan_tri'] },
   { key: '/thiet-bi', label: 'Thiết bị', icon: LaptopOutlined, roles: ['quan_tri', 'nhan_vien'] },
   { key: '/phieu-muon', label: 'Phiếu mượn – trả', icon: SwapOutlined, roles: ['quan_tri', 'nhan_vien'] },
+  { key: '/bao-duong', label: 'Bảo dưỡng – sửa chữa', icon: ToolOutlined, roles: ['quan_tri'] },
   {
     key: 'danh-muc',
     label: 'Danh mục',
