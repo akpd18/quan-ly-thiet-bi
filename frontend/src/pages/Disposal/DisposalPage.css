@@ -1,0 +1,60 @@
+.disposal-page {
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+}
+
+.disposal-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.disposal-page__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.disposal-page__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.disposal-page__search {
+  width: 320px;
+}
+
+.disposal-page__filter {
+  width: 170px;
+}
+
+.disposal-page__alert {
+  margin-bottom: var(--space-md);
+}
+
+.disposal-page__muted {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.disposal-page__detail {
+  margin: 0;
+}
+
+.disposal-page__row-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.disposal-page__date,
+.disposal-page__money {
+  width: 100%;
+}
+
+.disposal-page__actions {
+  display: flex;
+  gap: var(--space-sm);
+}

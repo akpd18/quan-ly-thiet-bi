@@ -38,6 +38,12 @@ export const KET_QUA_LABEL = {
   khong_thanh_cong: 'Không thành công',
 };
 
+export const HINH_THUC_LABEL = {
+  ban: 'Bán',
+  tieu_huy: 'Tiêu hủy',
+  tan_dung_linh_kien: 'Tận dụng linh kiện',
+};
+
 // Màu thẻ (Tag) của Ant Design cho từng giá trị
 export const TRANG_THAI_COLOR = {
   san_sang: 'success',
@@ -72,4 +78,10 @@ export const KET_QUA_COLOR = {
   dang_thuc_hien: 'processing',
   thanh_cong: 'success',
   khong_thanh_cong: 'error',
+};
+
+export const HINH_THUC_COLOR = {
+  ban: 'green',
+  tieu_huy: 'red',
+  tan_dung_linh_kien: 'blue',
 };

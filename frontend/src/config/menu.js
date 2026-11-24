@@ -1,6 +1,7 @@
 import {
   AppstoreOutlined,
   DashboardOutlined,
+  FileDoneOutlined,
   LaptopOutlined,
   SwapOutlined,
   TeamOutlined,
@@ -15,6 +16,7 @@ export const MENU_ITEMS = [
   { key: '/thiet-bi', label: 'Thiết bị', icon: LaptopOutlined, roles: ['quan_tri', 'nhan_vien'] },
   { key: '/phieu-muon', label: 'Phiếu mượn – trả', icon: SwapOutlined, roles: ['quan_tri', 'nhan_vien'] },
   { key: '/bao-duong', label: 'Bảo dưỡng – sửa chữa', icon: ToolOutlined, roles: ['quan_tri'] },
+  { key: '/thanh-ly', label: 'Thanh lý', icon: FileDoneOutlined, roles: ['quan_tri'] },
   {
     key: 'danh-muc',
     label: 'Danh mục',
