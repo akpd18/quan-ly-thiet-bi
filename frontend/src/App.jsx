@@ -10,6 +10,7 @@ import DeviceFormPage from './pages/DeviceForm/DeviceFormPage.jsx';
 import LoanListPage from './pages/Loan/LoanListPage.jsx';
 import LoanFormPage from './pages/LoanForm/LoanFormPage.jsx';
 import LoanDetailPage from './pages/LoanDetail/LoanDetailPage.jsx';
+import TransferPage from './pages/Transfer/TransferPage.jsx';
 import MaintenancePage from './pages/Maintenance/MaintenancePage.jsx';
 import DisposalPage from './pages/Disposal/DisposalPage.jsx';
 import DepartmentListPage from './pages/Department/DepartmentListPage.jsx';
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/thiet-bi/them" element={<DeviceFormPage />} />
           <Route path="/thiet-bi/:id/sua" element={<DeviceFormPage />} />
+          <Route path="/dieu-dong" element={<TransferPage />} />
           <Route path="/bao-duong" element={<MaintenancePage />} />
           <Route path="/thanh-ly" element={<DisposalPage />} />
           <Route path="/danh-muc/phong-ban" element={<DepartmentListPage />} />
