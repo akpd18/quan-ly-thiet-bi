@@ -1,6 +1,7 @@
 import {
   ApartmentOutlined,
   AppstoreOutlined,
+  AuditOutlined,
   DashboardOutlined,
   FileDoneOutlined,
   LaptopOutlined,
@@ -17,6 +18,7 @@ export const MENU_ITEMS = [
   { key: '/thiet-bi', label: 'Thiết bị', icon: LaptopOutlined, roles: ['quan_tri', 'nhan_vien'] },
   { key: '/phieu-muon', label: 'Phiếu mượn – trả', icon: SwapOutlined, roles: ['quan_tri', 'nhan_vien'] },
   { key: '/dieu-dong', label: 'Điều động', icon: ApartmentOutlined, roles: ['quan_tri'] },
+  { key: '/kiem-ke', label: 'Kiểm kê', icon: AuditOutlined, roles: ['quan_tri'] },
   { key: '/bao-duong', label: 'Bảo dưỡng – sửa chữa', icon: ToolOutlined, roles: ['quan_tri'] },
   { key: '/thanh-ly', label: 'Thanh lý', icon: FileDoneOutlined, roles: ['quan_tri'] },
   {

@@ -10,6 +10,7 @@ import loanRoutes from './routes/loan.routes.js';
 import maintenanceRoutes from './routes/maintenance.routes.js';
 import disposalRoutes from './routes/disposal.routes.js';
 import transferRoutes from './routes/transfer.routes.js';
+import inventoryRoutes from './routes/inventory.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -40,6 +41,7 @@ app.use('/api/loans', loanRoutes);
 app.use('/api/maintenance', maintenanceRoutes);
 app.use('/api/disposals', disposalRoutes);
 app.use('/api/transfers', transferRoutes);
+app.use('/api/inventories', inventoryRoutes);
 
 // Bắt lỗi chưa xử lý
 app.use((err, req, res, next) => {

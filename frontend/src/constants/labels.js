@@ -44,6 +44,19 @@ export const HINH_THUC_LABEL = {
   tan_dung_linh_kien: 'Tận dụng linh kiện',
 };
 
+export const KET_QUA_KIEM_KE_LABEL = {
+  dung: 'Đúng',
+  thieu: 'Thiếu',
+  thua: 'Thừa',
+  sai_vi_tri: 'Sai vị trí',
+  sai_tinh_trang: 'Sai tình trạng',
+};
+
+export const TRANG_THAI_DOT_LABEL = {
+  dang_kiem_ke: 'Đang kiểm kê',
+  hoan_tat: 'Hoàn tất',
+};
+
 // Màu thẻ (Tag) của Ant Design cho từng giá trị
 export const TRANG_THAI_COLOR = {
   san_sang: 'success',
@@ -84,4 +97,17 @@ export const HINH_THUC_COLOR = {
   ban: 'green',
   tieu_huy: 'red',
   tan_dung_linh_kien: 'blue',
+};
+
+export const KET_QUA_KIEM_KE_COLOR = {
+  dung: 'success',
+  thieu: 'error',
+  thua: 'purple',
+  sai_vi_tri: 'warning',
+  sai_tinh_trang: 'magenta',
+};
+
+export const TRANG_THAI_DOT_COLOR = {
+  dang_kiem_ke: 'processing',
+  hoan_tat: 'success',
 };
